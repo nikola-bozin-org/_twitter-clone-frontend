@@ -1,0 +1,664 @@
+body{
+    background-color: black;
+    border: 0;
+    margin: 0;
+    padding:0;
+}
+.twitter{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.leftbar{
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+.leftbarPreTop{
+}
+.leftbarTop{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 9;
+}
+.leftbarTopSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftbarTopSection:hover{
+    background-color: rgb(27, 27, 27);
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.leftbarTopSectionWrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+.leftbarTopSectionWrapContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:20px;
+    cursor: pointer;
+}
+.leftbarTopSectionWrapContentImg{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.leftbarTopSectionWrapContentText{
+    color: white;
+}
+.leftbarTopSectionButtonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+}
+.leftbarTopSectionButton{
+    border-radius: 40px;
+    width: 80%;
+    height: 80%;
+    border: 0;
+    background-color: rgb(29 161 242);
+    color: white;
+}
+.leftbarTopSectionButton2{
+    border-radius: 40px;
+    width: 80%;
+    height: 80%;
+    border: 0;
+    background-color: rgb(29 161 242);
+    color: white;
+    display: none;
+}
+.ltscImg{
+    width: 30px;
+    height: 30px;
+}
+.leftbarBottom{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.leftbarBottomSection{
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+}
+.leftbarBottomSectionLeft{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
+}
+.leftbarBottomSectionLeftImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.leftbarBottomSectionLeftImg:hover{
+    cursor: pointer;
+}
+.leftbarBottomSectionLeftInfo{
+    color: white;
+}
+.leftbarBottomSectionLeftInfo:hover{
+    cursor: pointer;
+}
+.leftbarBottomSectionRight{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    
+}
+.leftbarBottomSectionRightImg{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.leftbarBottomSectionRightImg:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    overflow-y: scroll;
+    height: 100vh;
+    width: 650px;
+    min-width: 650px;
+}
+.main::-webkit-scrollbar {
+    display: none;
+}
+.mainSection{
+    border: 1px solid rgba(101, 119, 134,0.5);
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+.mainSectionRight{
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    margin-left: 20px;
+}
+.mainSectionRightUserInfo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+.mainSectionRightUserInfoBlueTick{
+    width: 17.5px;
+    height: 17.5px;
+}
+.mainSectionRightUserInfoBlueMore{
+    width: 17.5px;
+    height: 17.5px;
+    margin-right: 20px;
+}
+.mainSectionRightUserInfoLeftElements{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.mainSectionRightUserPost{
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+}
+.mainSectionRightOptions{
+    display: flex;
+    align-items: center;
+    gap:45px;
+    justify-content: flex-start;
+}
+.mainSectionRightOptionsElement{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    height: 100%;
+    cursor: pointer;
+}
+.mainSectionRightOptionsElementImg{
+    width: 17px;
+    height: 17px;
+    margin-bottom: 1px;
+}
+.mainSectionRightOptionsElementText{
+    color: white;
+    font-size: 1.2rem;
+}
+.mainSectionRightUserInfoDatePosted::marker{
+    content: '• ';
+}
+.mainHomeSection{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+    border: 1px solid rgba(	101,119, 134,0.5);
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: rgba(0,0,0,0.95);
+    border-top: none;
+}
+.mainHomeSectionHomeTextWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-indent: 20px;
+    margin-bottom: -5px;
+}
+
+.mainSectionRightUserPostImageId_1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.mainHomeSectionBottomElements{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.mainHomeSectionBottomElement{
+    text-align: center;
+}
+.mainHomeSectionBottomElement:hover{
+    cursor: pointer;
+}
+.mainHomeSectionBottomElementWrap{
+    border-bottom: 5px solid rgb(29 161 242);
+}
+
+.tweetSection{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    border: 1px solid rgba(101, 119 ,134,0.5);
+}
+.tweetSectionUser{
+    height: 120px;
+}
+.tweetSectionUserImage{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 5px 2px;
+}
+.tweetSectionOther{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 20px;
+}
+.tweetSectionOtherInput{
+    width: 90%;
+    height: 100%;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+.tweetSectionOtherMisc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tweetSectionOtherMiscIcon{
+    width: 20px;
+    height: 20px;
+}
+.tweetSectionOtherMiscIcons{
+    display: flex;
+    gap: 10px;
+}
+.tweetSectionOtherMiscButtonWrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tweetSectionOtherMiscButton{
+    height: 70%;
+    width: 70%;
+    background-color: rgb(29 161 242);
+    border-radius: 40px;
+    border: none;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tweetSectionOtherMiscIcon{
+    cursor: pointer;
+}
+.newTweetsSection{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(29 161 242);
+    border: 1px solid rgba(	101, 119, 134,0.5);
+}
+
+.leftbarDown{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+.tweetBottom{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 2;
+
+}
+.tweetBottomButton{
+    background-color: rgb(29 161 242);
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: none;
+}
+.tweetBottomButtonImg{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightbarWrapTrendsListItemNameAndOptions{
+    color: rgba(255, 255, 255, 0.35);
+}
+.rightbarWrapTrendsListItemTweetsNumber{
+    color: rgba(255, 255, 255, 0.35);
+}
+.mainSectionRightUserInfoTwitterName{
+    color: rgba(255, 255, 255, 0.55);
+}
+.mainSectionRightUserInfoDatePosted{
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightbar{
+    width: 380px;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.rigthbarWrap{
+    width: 90%;
+    display: grid;
+    grid-template-rows: 8% 1fr 10%;
+    overflow-y: scroll;
+}
+.rigthbarWrap::-webkit-scrollbar {
+    display: none !important;
+}
+.rigthbarWrapSearchbar{
+    border-radius: 40px;
+    background-color: rgb(20 23 26);
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
+    margin-top: 5px;
+}
+.rigthbarWrapSearchbarImage{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+.rigthbarWrapSearchbarInput{
+    border: none;
+    background-color: rgb(	20 23 26);
+}
+.rigthbarWrapTrends{
+    width: 100%;
+    color: white;
+    background-color: rgb(20 23 26);
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap:10px;
+
+}
+.rigthbarWrapTrendsWrapTrendsForYou{
+    display: flex;
+    justify-content: flex-start;
+    text-indent: 20px;
+    font-size: 1.5rem;
+}
+.rightbarWrapTrendsList{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+}
+.rightbarWrapTrendsListItem{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    text-indent: 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.rightbarWrapTrendsListItemMain{
+    font-size: 1.1rem;
+}
+.rightbarWrapTrendsListItemNameAndOptions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightbarWrapTrendsListItemOptions{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.ShowMoreTrends{
+    text-indent: 20px;
+    color: rgb(29 161 242);
+    margin-bottom: 20px;
+}
+
+
+.rightbarWrapOther{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.rightbarWrapOtherItem{
+    margin-right: 10px;
+    height: 5px;
+    cursor: pointer;
+}
+.rightbarEnd{
+    color: white;
+}
+
+
+
+
+
+.invertColor{
+    filter: invert(100%);
+}
+
+
+@media (max-width:1110px){
+   .leftbarTopSectionWrapContentText{
+    display: none;
+   }
+   .leftbarTopSectionButtonWrapper{
+       justify-content: end;
+   }
+   .leftbarTopSectionButton{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: none;
+   }
+   .leftbarTopSectionButton2{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: inline;
+}
+   .leftbarTopSectionWrap{
+    justify-content: flex-end;
+    margin-right: 20px;
+   }
+   .leftbarTop{
+    width: 100%;
+   }
+   .leftbarBottom{
+    margin-left: 12px;
+   }
+   .leftbarBottomSectionRight{
+    display: none;
+   }
+   .leftbarBottomSectionLeftInfo{
+    display: none;
+   }
+   .leftbarBottomSectionLeft{
+    justify-content: flex-end;
+   }
+   .main{
+    min-width: 500px;
+   }
+   .mainSectionRightUserPostText{
+    font-size: 1.1rem;
+    width: 100%;
+    margin: 0;
+   }
+   .mainSectionRightOptions{
+    gap: 20px;
+   }
+   .leftbarTopSectionButtonText{
+    display: none;
+   }
+}
+
+@media (max-width:980px){
+    .rightbar{
+        display: none;
+    }
+}
+
+
+@media (max-width:570px){
+    .main{
+        min-width: 100px;
+    }
+    .leftbar{
+        display: none;
+    }
+    .tweetSectionOtherMiscButton{
+    }
+    .leftbarDown{
+        display: inline;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .leftbarDownElementImg{
+        width: 30px;
+        height: 30px;
+    }
+    .tweetBottomButton{
+        display: block;
+    }
+}
+
+
+@media (max-width:485px){
+    .mainSectionRightUserInfo{
+        font-size: 0.9rem;
+    }
+    .mainSectionRightOptions{
+        gap: 20px;
+    }
+    .mainSectionRightOptionsElement{
+        gap: 5px;
+    }
+    .mainSectionRightUserInfoLeftElements{
+        gap:2px;
+    }
+    .tweetSectionUserImage{
+        width: 65px;
+        height: 65px;
+    }
+    .mainSectionRight{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:390px){
+    .mainSectionRightOptions{
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+    .tip-element{
+        display: flex;
+        flex-direction: column;
+    }
+}
